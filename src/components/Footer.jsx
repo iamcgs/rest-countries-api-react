@@ -12,7 +12,7 @@ function Footer() {
         >
           Frontend Mentor
         </a>
-        . Coded by{' '}
+        . <br /> Coded by{' '}
         <a
           href="https://github.com/iamcgs"
           className="text-cyan-700 hover:opacity-80"
