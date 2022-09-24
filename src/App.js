@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import CountryDetails from './pages/CountryDetails';
 import Home from './pages/Home';
@@ -109,6 +110,7 @@ function App() {
         />
         <Route path="/details/:countryCode" element={<CountryDetails />} />
       </Routes>
+      <Footer />
     </>
   );
 }
