@@ -19,7 +19,8 @@ function App() {
   };
 
   const handleBackHome = () => {
-    window.location.href = '/';
+    setOpenSelect(false);
+    setRegion('');
   };
 
   const regionsArray = [

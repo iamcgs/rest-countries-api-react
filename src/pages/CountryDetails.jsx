@@ -129,14 +129,14 @@ function CountryDetails() {
                         to={`/details/${border}`}
                         key={border}
                         state={border}
-                        className="bg-whiteClr px-10 py-2 drop-shadow-lg dark:bg-darkBlue lg:py-1 lg:px-4"
+                        className="bg-whiteClr px-6 py-2 drop-shadow-lg dark:bg-darkBlue sm:px-10 lg:py-1 lg:px-4"
                       >
                         {border}
                       </Link>
                     );
                   })
                 ) : (
-                  <p className="-mt-4">
+                  <p className="-mt-4 lg:mt-0">
                     {country?.name?.common} has no border countries.
                   </p>
                 )}
