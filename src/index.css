@@ -10,4 +10,12 @@
   main {
     @apply min-h-[calc(100vh-220px)] lg:min-h-[calc(100vh-160px)];
   }
+
+  .select-region {
+    @apply flex h-14 w-full cursor-pointer items-center justify-between rounded-md bg-white px-6 shadow-md outline outline-[1px] outline-transparent dark:bg-darkBlue md:w-1/2 lg:ml-auto;
+  }
+
+  .select-open {
+    @apply outline-slate-400/70 dark:outline-white;
+  }
 }

@@ -32,7 +32,9 @@ function SearchCountry({
       </div>
       <div className="relative flex w-3/4 flex-col gap-4">
         <div
-          className="flex h-14 w-full cursor-pointer items-center justify-between rounded-md px-6 shadow-md outline outline-[1px] outline-white marker:bg-white dark:bg-darkBlue md:w-1/2 lg:ml-auto"
+          className={
+            !openSelect ? 'select-region' : 'select-region select-open'
+          }
           onClick={handleSelect}
         >
           <span>
@@ -43,7 +45,7 @@ function SearchCountry({
           {openSelect ? <HiChevronUp size={24} /> : <HiChevronDown size={24} />}
         </div>
         {openSelect && (
-          <ul className=" absolute top-16 z-10 flex w-full flex-col gap-3 rounded-md bg-white py-4 px-6 shadow-md outline outline-[1px] outline-white dark:bg-darkBlue md:w-1/2 lg:right-0">
+          <ul className="absolute top-16 z-10 flex w-full flex-col gap-3 rounded-md bg-white py-4 px-6 shadow-md outline outline-[1px] outline-slate-400/70 dark:bg-darkBlue dark:outline-white md:w-1/2 lg:right-0">
             {regionsArray.map((region, index) => {
               return (
                 <li
