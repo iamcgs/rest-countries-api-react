@@ -35,7 +35,8 @@ function Home({
         <>
           {searchCountries.length === 0 ? (
             <h2 className="mt-12 w-full p-4 text-center italic text-darkBlue dark:text-whiteClr">
-              '{searchCountry}' is not found {region ? `in ${region}.` : '.'}{' '}
+              '{searchCountry}' is not found{' '}
+              {region && region !== 'All Countries' ? `in ${region}.` : '.'}{' '}
               Please try again.
             </h2>
           ) : (

@@ -20,6 +20,7 @@ function App() {
 
   const handleBackHome = () => {
     setOpenSelect(false);
+    setSearchCountry('');
     setRegion('');
   };
 

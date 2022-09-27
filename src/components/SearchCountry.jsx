@@ -47,7 +47,7 @@ function SearchCountry({
             {regionsArray.map((region, index) => {
               return (
                 <li
-                  className="cursor-pointer"
+                  className="cursor-pointer transition-all duration-200 ease-in-out hover:text-veryDarkBlueLM/70 dark:hover:text-veryLightGray/70"
                   key={index}
                   onClick={() => handleRegion(region)}
                 >
