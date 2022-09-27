@@ -101,6 +101,7 @@ function App() {
                 searchCountry={searchCountry}
                 setSearchCountry={setSearchCountry}
                 searchCountries={searchCountries}
+                setOpenSelect={setOpenSelect}
                 openSelect={openSelect}
                 handleSelect={handleSelect}
                 region={region}

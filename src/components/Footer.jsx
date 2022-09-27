@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="flex h-[120px] items-center justify-center bg-white shadow-md lg:h-20">
+    <footer className="flex h-[120px] items-center justify-center bg-white shadow-md dark:bg-darkBlue dark:text-white lg:h-20">
       <p className="text-center">
         Challenge by{' '}
         <a
@@ -15,7 +15,7 @@ function Footer() {
         . <br /> Coded by{' '}
         <a
           href="https://github.com/iamcgs"
-          className="text-cyan-700 hover:opacity-80"
+          className="text-cyan-700 hover:opacity-80 dark:text-cyan-400"
         >
           Carla
         </a>

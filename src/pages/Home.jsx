@@ -10,6 +10,7 @@ function Home({
   searchCountry,
   setSearchCountry,
   regionsArray,
+  setOpenSelect,
   openSelect,
   handleSelect,
   region,
@@ -22,6 +23,7 @@ function Home({
         handleSearch={handleSearch}
         searchCountry={searchCountry}
         setSearchCountry={setSearchCountry}
+        setOpenSelect={setOpenSelect}
         openSelect={openSelect}
         handleSelect={handleSelect}
         region={region}
@@ -33,7 +35,8 @@ function Home({
         <>
           {searchCountries.length === 0 ? (
             <h2 className="mt-12 w-full p-4 text-center italic text-darkBlue dark:text-whiteClr">
-              '{searchCountry}' is not found. Please try again.
+              '{searchCountry}' is not found {region ? `in ${region}.` : '.'}{' '}
+              Please try again.
             </h2>
           ) : (
             <section className="grid gap-12 gap-y-8 md:mx-auto md:max-w-[800px] md:grid-cols-2 md:gap-x-2 lg:max-w-[1000px] lg:grid-cols-3 lg:px-14 xl:max-w-full xl:grid-cols-4 xl:gap-16 xl:px-20">
