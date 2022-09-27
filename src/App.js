@@ -24,7 +24,7 @@ function App() {
   };
 
   const regionsArray = [
-    'All',
+    'All Countries',
     'Africa',
     'Americas',
     'Asia',
@@ -53,12 +53,11 @@ function App() {
   const handleRegion = (value) => {
     setRegion(value);
     setOpenSelect(false);
-    console.log(`selected region is: ${value}`);
   };
 
   let filteredCountries = [];
 
-  if (region === '' || region === 'All') {
+  if (region === '' || region === 'All Countries') {
     filteredCountries = countries;
   } else {
     filteredCountries = countries.filter((country) => {
@@ -89,28 +88,30 @@ function App() {
         onDarkMode={handleDarkMode}
         handleBackHome={handleBackHome}
       />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              countries={countries}
-              regionsArray={regionsArray}
-              isLoading={isLoading}
-              handleSearch={handleSearch}
-              searchCountry={searchCountry}
-              setSearchCountry={setSearchCountry}
-              searchCountries={searchCountries}
-              openSelect={openSelect}
-              handleSelect={handleSelect}
-              region={region}
-              handleRegion={handleRegion}
-              filteredCountries={filteredCountries}
-            />
-          }
-        />
-        <Route path="/details/:countryCode" element={<CountryDetails />} />
-      </Routes>
+      <main className="pb-8 pt-10">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                countries={countries}
+                regionsArray={regionsArray}
+                isLoading={isLoading}
+                handleSearch={handleSearch}
+                searchCountry={searchCountry}
+                setSearchCountry={setSearchCountry}
+                searchCountries={searchCountries}
+                openSelect={openSelect}
+                handleSelect={handleSelect}
+                region={region}
+                handleRegion={handleRegion}
+                filteredCountries={filteredCountries}
+              />
+            }
+          />
+          <Route path="/details/:countryCode" element={<CountryDetails />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

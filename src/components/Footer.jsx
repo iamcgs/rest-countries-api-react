@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="mt-8 p-8">
+    <footer className="flex h-[120px] items-center justify-center bg-white shadow-md lg:h-20">
       <p className="text-center">
         Challenge by{' '}
         <a

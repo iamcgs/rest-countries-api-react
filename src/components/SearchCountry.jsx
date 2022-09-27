@@ -30,7 +30,7 @@ function SearchCountry({
       </div>
       <div className="relative flex w-3/4 flex-col gap-4">
         <div
-          className="flex h-14 w-full cursor-pointer items-center justify-between rounded-md px-6 shadow-md marker:bg-white dark:bg-darkBlue md:w-1/2 lg:ml-auto"
+          className="flex h-14 w-full cursor-pointer items-center justify-between rounded-md bg-white px-6 shadow-md marker:bg-white dark:bg-darkBlue md:w-1/2 lg:ml-auto"
           onClick={handleSelect}
         >
           <span>

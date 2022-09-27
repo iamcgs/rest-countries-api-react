@@ -6,4 +6,8 @@
   body {
     @apply mx-auto bg-veryLightGray font-nunitoSans text-veryDarkBlueLM dark:bg-veryDarkBlueDM dark:text-whiteClr;
   }
+
+  main {
+    @apply min-h-[calc(100vh-220px)] lg:min-h-[calc(100vh-160px)];
+  }
 }
